@@ -10,7 +10,7 @@
         private ?string $senha;
         private ?string $contato;
         private ?string $data_nascimento;
-        private ?int $cidade;
+        private ?int $idCidade;
 
         public function __construct(){}
 
@@ -35,8 +35,8 @@
         public function getDataNascimento(){return $this->data_nascimento;}
         public function setDataNascimento(string $data_nascimento){$this->data_nascimento=$data_nascimento;}
 
-        public function getCidade(){return $this->cidade;}
-        public function setCidade(int $cidade){$this->cidade=$cidade;}
+        public function getCidade(){return $this->idCidade;}
+        public function setCidade(int $idCidade){$this->idCidade=$idCidade;}
 
     }
 

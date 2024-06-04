@@ -25,7 +25,7 @@
     <form>
       
       <div class="d-flex justify-content-center">
-      <img class="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+      <img class="mb-1" src="../image/logobeyou.png" alt="" width="300" height="260">
       </div>
       <h1 class="h3 mb-3 fw-normal">Criar conta</h1>
 

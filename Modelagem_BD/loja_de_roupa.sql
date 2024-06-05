@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 19/05/2024 às 21:25
+-- Tempo de geração: 05/06/2024 às 20:04
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -44,6 +44,14 @@ CREATE TABLE `cidade` (
   `idUF` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Despejando dados para a tabela `cidade`
+--
+
+INSERT INTO `cidade` (`idCidade`, `cidade`, `idUF`) VALUES
+(1, 'Assis', 1),
+(2, 'Candido Mota', 1);
+
 -- --------------------------------------------------------
 
 --
@@ -53,13 +61,21 @@ CREATE TABLE `cidade` (
 CREATE TABLE `cliente` (
   `id` int(3) NOT NULL,
   `nome` varchar(70) NOT NULL,
-  `cpf` varchar(12) NOT NULL,
+  `cpf` varchar(14) NOT NULL,
   `email` varchar(80) NOT NULL,
-  `senha` varchar(20) NOT NULL,
-  `contato` varchar(12) DEFAULT NULL,
+  `senha` varchar(32) NOT NULL,
+  `ddd` int(2) UNSIGNED NOT NULL DEFAULT 18 COMMENT 'discagem direta à distância',
+  `contato` varchar(10) DEFAULT NULL,
   `data_nascimento` date NOT NULL,
   `idCidade` int(3) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `cliente`
+--
+
+INSERT INTO `cliente` (`id`, `nome`, `cpf`, `email`, `senha`, `ddd`, `contato`, `data_nascimento`, `idCidade`) VALUES
+(1, 'Diego Brito da Silva', '469.005.598-08', 'diegobritosilva@gmail.com', 'e96d16e0e97ce4f1bc397156eb34c9a8', 18, '99912-4567', '2004-03-17', 1);
 
 -- --------------------------------------------------------
 
@@ -298,13 +314,13 @@ ALTER TABLE `categoria`
 -- AUTO_INCREMENT de tabela `cidade`
 --
 ALTER TABLE `cidade`
-  MODIFY `idCidade` int(3) NOT NULL AUTO_INCREMENT;
+  MODIFY `idCidade` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de tabela `cliente`
 --
 ALTER TABLE `cliente`
-  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de tabela `cor`

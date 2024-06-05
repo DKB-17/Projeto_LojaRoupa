@@ -2,12 +2,13 @@
 
     namespace MODEL;
 
-    class cliente{
+    class Cliente{
         private ?int $id;
         private ?string $nome;
         private ?string $cpf;
         private ?string $email;
         private ?string $senha;
+        private ?int $ddd; 
         private ?string $contato;
         private ?string $data_nascimento;
         private ?int $idCidade;
@@ -26,17 +27,20 @@
         public function getEmail(){return $this->email;}
         public function setEmail(string $email){$this->email=$email;}
 
-        public function getsenha(){return $this->senha;}
-        public function setsenha(string $senha){$this->senha=$senha;}
+        public function getSenha(){return $this->senha;}
+        public function setSenha(string $senha){$this->senha=$senha;}
 
-        public function getcontato(){return $this->contato;}
-        public function setcontato(string $contato){$this->contato=$contato;}
+        public function getDdd(){return $this->ddd;}
+        public function setDdd(int $ddd){$this->ddd = $ddd;}
+
+        public function getContato(){return $this->contato;}
+        public function setContato(string $contato){$this->contato=$contato;}
 
         public function getDataNascimento(){return $this->data_nascimento;}
         public function setDataNascimento(string $data_nascimento){$this->data_nascimento=$data_nascimento;}
 
-        public function getCidade(){return $this->idCidade;}
-        public function setCidade(int $idCidade){$this->idCidade=$idCidade;}
+        public function getIdcidade(){return $this->idCidade;}
+        public function setIdcidade(int $idCidade){$this->idCidade=$idCidade;}
 
     }
 

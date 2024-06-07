@@ -2,7 +2,7 @@
 
     namespace MODEL;
 
-    class cidade{
+    class Cidade{
         private ?int $idCidade;
         private ?string $cidade;
         private ?int $idUf;

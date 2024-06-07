@@ -1,7 +1,3 @@
-<?php
-
-?>
-
 <!doctype html>
 <html lang="pt-br" data-bs-theme="auto">
 
@@ -16,36 +12,46 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <link href="sign-in.css" rel="stylesheet">
+    <link href="./CLIENTE/sign-in.css" rel="stylesheet">
 
 <body class="d-flex align-items-center py-4 bg-body-tertiary">
 
     <main class="form-signin w-100 m-auto">
         <div>
-            <form method="POST" action="valida.php">
+            <form method="POST" action="validaLogin.php">
                 <div class="d-flex justify-content-center">
-                    <img class="mb-2" src="../img/logobeyou.png" alt="" width="200" height="100" ">
+                    <img class="mb-2" src="./img/logobeyou.png" alt="" width="200" height="100" ">
                 </div>
-    
-
-                    <div class=" form-floating">
-                    <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
+                <?php
+                  if(isset($_COOKIE['autorizado'])){
+                    if($_COOKIE['autorizado'] == 'false'){
+                    echo '<div class="alert alert-danger" role="alert"> Email ou senha incorreto </div>';
+                    }
+                }else{
+                  echo '<h1 class="h5 mb-2 fw-normal">Entrar</h1>';
+                }
+                ?>
+                <div class=" form-floating">
+                    <input type="email" class="form-control" id="email-login" name="emailLogin" placeholder="name@example.com" required>
                     <label for="email">Email</label>
                 </div>
                 <div class="form-floating">
-                    <input type="password" class="form-control" id="senha" name="senha" placeholder="Password" required>
+                    <input type="password" class="form-control" id="senha-login" name="senhaLogin" placeholder="Password" required>
                     <label for="senha">Senha</label>
                 </div>
 
                 <div class="form-check text-start my-3">
-                    <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
+                    <input class="form-check-input" type="checkbox" value="lembrar" id="flexCheckDefault" name="relembrar">
                     <label class="form-check-label" for="flexCheckDefault">
                         Lembre de mim
                     </label>
                 </div>
                 <button class="btn btn-primary w-100 py-2 m-1" type="submit" name="btn-login">Entrar</button>
             </form>
-            <a href="cadastro.php">
+            <a href="index.php">
+                <button class="btn btn-primary w-100 py-2 m-1">Voltar</button>
+            </a>
+            <a href="./CLIENTE/cadastro.php">
                 <button class="btn btn-primary w-100 py-2 m-1">Cadastra-se</button>
             </a>
         </div>
@@ -60,3 +66,6 @@
 </body>
 
 </html>
+<?php 
+    setcookie('autorizado',null);
+?>

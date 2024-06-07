@@ -1,7 +1,3 @@
-<?php
-    session_start();
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -22,13 +18,15 @@
 
                 <div>
                     <?php
-                        if(!isset($_SESSION['logado'])){
-                        echo '<a href="./CLIENTE/login.php"><button type="button" class="btn btn-primary">Entrar</button></a>';
-                    } else{
-                        echo '<a href="./CLIENTE/sair.php"><button type="button" class="btn btn-primary">Sair</button></a>';
-                    }
+                        if(isset($_COOKIE['autorizado']) && $_COOKIE['autorizado'] == 'true'){
+                            echo '<a href="./sair.php"><button type="button" class="btn btn-primary">Sair</button></a>';
+                            
+                        }else{
+                            echo '<a href="./login.php"><button type="button" class="btn btn-primary">Entrar</button></a>';
+                            
+                        }
                     
-                ?>
+                    ?>
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"

@@ -12,20 +12,23 @@
             $query = $con->prepare($sql);
             $query->execute([$email]);
             $linha = $query->fetch(\PDO::FETCH_ASSOC);
-            Conexao::desconectar();
+            $con = Conexao::desconectar();
 
-            $cliente = new \MODEL\Cliente();
-            $cliente->setId($linha['id']);
-            $cliente->setNome($linha['nome']);
-            $cliente->setCpf($linha['cpf']);
-            $cliente->setEmail($linha['email']);
-            $cliente->setSenha($linha['senha']);
-            $cliente->setDdd($linha['ddd']);
-            $cliente->setContato($linha['contato']);
-            $cliente->setDataNascimento($linha['data_nascimento']);
-            $cliente->setIdcidade($linha['idCidade']);
-           
-            return $cliente;
+            
+            if($linha != 0){
+                $cliente = new \MODEL\Cliente();
+                $cliente->setId($linha['id']);
+                $cliente->setNome($linha['nome']);
+                $cliente->setCpf($linha['cpf']);
+                $cliente->setEmail($linha['email']);
+                $cliente->setSenha($linha['senha']);
+                $cliente->setPrefixo($linha['prefixo']);
+                $cliente->setContato($linha['contato']);
+                $cliente->setDataNascimento($linha['data_nascimento']);
+                $cliente->setIdcidade($linha['idCidade']);
+                return $cliente;
+            }
+            return null;
         }
     }
 ?>

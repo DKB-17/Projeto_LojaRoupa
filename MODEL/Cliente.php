@@ -8,7 +8,7 @@
         private ?string $cpf;
         private ?string $email;
         private ?string $senha;
-        private ?int $ddd; 
+        private ?int $prefixo; 
         private ?string $contato;
         private ?string $data_nascimento;
         private ?int $idCidade;
@@ -30,8 +30,8 @@
         public function getSenha(){return $this->senha;}
         public function setSenha(string $senha){$this->senha=$senha;}
 
-        public function getDdd(){return $this->ddd;}
-        public function setDdd(int $ddd){$this->ddd = $ddd;}
+        public function getPrefixo(){return $this->prefixo;}
+        public function setPrefixo(int $prefixo){$this->prefixo = $prefixo;}
 
         public function getContato(){return $this->contato;}
         public function setContato(string $contato){$this->contato=$contato;}

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 05/06/2024 às 20:04
+-- Tempo de geração: 11/06/2024 às 01:21
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -64,7 +64,7 @@ CREATE TABLE `cliente` (
   `cpf` varchar(14) NOT NULL,
   `email` varchar(80) NOT NULL,
   `senha` varchar(32) NOT NULL,
-  `ddd` int(2) UNSIGNED NOT NULL DEFAULT 18 COMMENT 'discagem direta à distância',
+  `prefixo` int(2) UNSIGNED NOT NULL DEFAULT 55 COMMENT 'discagem direta à distância',
   `contato` varchar(10) DEFAULT NULL,
   `data_nascimento` date NOT NULL,
   `idCidade` int(3) NOT NULL
@@ -74,8 +74,8 @@ CREATE TABLE `cliente` (
 -- Despejando dados para a tabela `cliente`
 --
 
-INSERT INTO `cliente` (`id`, `nome`, `cpf`, `email`, `senha`, `ddd`, `contato`, `data_nascimento`, `idCidade`) VALUES
-(1, 'Diego Brito da Silva', '469.005.598-08', 'diegobritosilva@gmail.com', 'e96d16e0e97ce4f1bc397156eb34c9a8', 18, '99912-4567', '2004-03-17', 1);
+INSERT INTO `cliente` (`id`, `nome`, `cpf`, `email`, `senha`, `prefixo`, `contato`, `data_nascimento`, `idCidade`) VALUES
+(1, 'Diego Brito da Silva', '469.005.598-08', 'diegobritosilva@gmail.com', 'e96d16e0e97ce4f1bc397156eb34c9a8', 55, '99912-4567', '2004-03-17', 1);
 
 -- --------------------------------------------------------
 
@@ -145,6 +145,7 @@ CREATE TABLE `produto` (
   `idCategoria` int(3) NOT NULL,
   `idTamanho` int(2) NOT NULL,
   `descricao` varchar(100) NOT NULL,
+  `imagem` varchar(50) NOT NULL COMMENT 'caminho da imagem do produto',
   `valor_compra` decimal(6,2) UNSIGNED NOT NULL,
   `valor_venda` decimal(6,2) UNSIGNED NOT NULL,
   `estoque` int(3) UNSIGNED DEFAULT NULL,

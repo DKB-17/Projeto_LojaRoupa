@@ -2,7 +2,7 @@
 
     namespace MODEL;
 
-    class uf{
+    class Uf{
         private ?int $id;
         private ?string $uf;
         

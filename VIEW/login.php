@@ -51,7 +51,7 @@
             <a href="index.php">
                 <button class="btn btn-primary w-100 py-2 m-1">Voltar</button>
             </a>
-            <a href="./CLIENTE/cadastro.php">
+            <a href="./CLIENTE/cadastroCliente.php">
                 <button class="btn btn-primary w-100 py-2 m-1">Cadastra-se</button>
             </a>
         </div>
@@ -60,8 +60,6 @@
     <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
-
-
 
 </body>
 

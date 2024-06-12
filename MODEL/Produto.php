@@ -7,6 +7,7 @@
         private ?int $idCategoria;
         private ?int $idTamanho;
         private ?string $descricao;
+        private ?string $imagem;
         private ?float $valor_compra;
         private ?float $valor_venda;
         private ?int $estoque;
@@ -25,6 +26,9 @@
 
         public function getDescricao(){return $this->descricao;}
         public function setDescricao(string $descricao){$this->descricao=$descricao;}
+
+        public function getImagem(){return $this->imagem;}
+        public function setImagem(string $imagem){$this->imagem=$imagem;}
 
         public function getValorCompra(){return $this->valor_compra;}
         public function setValorCompra(float $valor_compra){$this->valor_compra=$valor_compra;}

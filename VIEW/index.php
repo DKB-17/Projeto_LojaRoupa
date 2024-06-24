@@ -43,7 +43,7 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="./img/Maculino/Blusa/corta_vento_azul.png" alt="" style="position: absolute; z-index: 0; opacity:0.5; width:100%; height:100%;">
+        <img src="./img/Masculino/Blusa/corta_vento_azul.png" alt="" style="position: absolute; z-index: 0; opacity:0.5; width:100%; height:100%;">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%"/></svg>
         <div class="container">
           <div class="carousel-caption text-start">
@@ -54,7 +54,7 @@
         </div>
       </div>
       <div class="carousel-item">
-      <img src="./img/Maculino/Blusa/corta_vento_verde.png" alt="" style="position: absolute; z-index: 0; opacity:0.5; width:100%; height:100%;">
+      <img src="./img/Masculino/Blusa/corta_vento_verde.png" alt="" style="position: absolute; z-index: 0; opacity:0.5; width:100%; height:100%;">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%"/></svg>
         <div class="container">
           <div class="carousel-caption">
@@ -65,7 +65,7 @@
         </div>
       </div>
       <div class="carousel-item">
-      <img src="./img/Maculino/Blusa/corta_vento_ciano.png" alt="" style="position: absolute; z-index: 0; opacity:0.5; width:100%; height:100%;">
+      <img src="./img/Masculino/Blusa/corta_vento_ciano.png" alt="" style="position: absolute; z-index: 0; opacity:0.5; width:100%; height:100%;">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%"/></svg>
         <div class="container">
           <div class="carousel-caption">
@@ -76,7 +76,7 @@
         </div>
       </div>
       <div class="carousel-item">
-      <img src="./img/Maculino/Blusa/corta_vento_marrom.png" alt="" style="position: absolute; z-index: 0; opacity:0.5; width:100%; height:100%;">
+      <img src="./img/Masculino/Blusa/corta_vento_marrom.png" alt="" style="position: absolute; z-index: 0; opacity:0.5; width:100%; height:100%;">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%"/></svg>
         <div class="container">
           <div class="carousel-caption">
@@ -87,7 +87,7 @@
         </div>
       </div>
       <div class="carousel-item">
-      <img src="./img/Maculino/Blusa/casaco_cinza.png" alt="" style="position: absolute; z-index: 0; opacity:0.5; width:100%; height:100%;">
+      <img src="./img/Masculino/Blusa/casaco_cinza.png" alt="" style="position: absolute; z-index: 0; opacity:0.5; width:100%; height:100%;">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%"/></svg>
         <div class="container">
           <div class="carousel-caption">
@@ -107,6 +107,138 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>  
+
+
+
+
+  <div class="album py-5">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+          <img src="./img/Masculino/Blusa/casaco_cinza.png" class="card-img-top" alt="Thumbnail" width="100%" height="225">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div>
+                <small class="text-body-secondary">R$50,00</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+          <img src="./img/Masculino/Blusa/casaco_cinza.png" class="card-img-top" alt="Thumbnail" width="100%" height="225">            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+
+                </div>
+                <small class="text-body-secondary">R$50,00</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+          <img src="./img/Masculino/Blusa/casaco_cinza.png" class="card-img-top" alt="Thumbnail" width="100%" height="225">            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div>
+                <small class="text-body-secondary">R$50,00</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+          <img src="./img/Masculino/Blusa/casaco_cinza.png" class="card-img-top" alt="Thumbnail" width="100%" height="225">            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div>
+                <small class="text-body-secondary">R$50,00</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+<img src="./img/Masculino/Blusa/casaco_cinza.png" class="card-img-top" alt="Thumbnail" width="100%" height="225">            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div>
+                <small class="text-body-secondary">R$50,00</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+<img src="./img/Masculino/Blusa/casaco_cinza.png" class="card-img-top" alt="Thumbnail" width="100%" height="225">            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div>
+                <small class="text-body-secondary">R$50,00</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+<img src="./img/Masculino/Blusa/casaco_cinza.png" class="card-img-top" alt="Thumbnail" width="100%" height="225">            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div>
+                <small class="text-body-secondary">R$50,00</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+<img src="./img/Masculino/Blusa/casaco_cinza.png" class="card-img-top" alt="Thumbnail" width="100%" height="225">            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div>
+                <small class="text-body-secondary">R$50,00</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+<img src="./img/Masculino/Blusa/casaco_cinza.png" class="card-img-top" alt="Thumbnail" width="100%" height="225">            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div>
+                <small class="text-body-secondary">R$50,00</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
     </main>
 

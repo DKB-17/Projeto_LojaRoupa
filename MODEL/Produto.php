@@ -2,7 +2,7 @@
 
     namespace MODEL;
 
-    class produto{
+    class Produto{
         private ?int $idProduto;
         private ?int $idCategoria;
         private ?int $idTamanho;

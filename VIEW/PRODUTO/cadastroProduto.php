@@ -4,36 +4,12 @@ include_once "C:/xampp/htdocs/Projeto_LojaRoupa/BLL/Categoria.php";
 include_once "C:/xampp/htdocs/Projeto_LojaRoupa/BLL/Tamanho.php";
 
 session_start();
-if(isset($_SESSION['emailLogin']) && !empty($_SESSION['emailLogin'])){
-    if(!($_SESSION['emailLogin'] == 'diegobritosilva@gmail.com')){
+if (isset($_SESSION['emailLogin']) && !empty($_SESSION['emailLogin'])) {
+    if (!($_SESSION['emailLogin'] == 'diegobritosilva@gmail.com')) {
         header("location:../index.php");
     }
-}else{
+} else {
     header("location:../index.php");
-}
-
-if(isset($_FILES['imagem'])){
-    $imagem = $_FILES['imagem'];
-    if($imagem['error']){
-        die('alert("Falha ao enviar arquivo")');
-    }
-    $pasta = "../img/imgProdutos/";
-    $nomeDaImagem = $arquivo['name'];
-    $novoNomeDaImagem = uniqid();
-    $extensao = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
-
-    if($extensao != "jpg" && $extensao != "png"){
-        die('alert("Tipo de arquvio nao aceito")');
-    }
-
-    $caminho = $pasta . $novoNomeDaImagem . "." . $extensao;
-
-    $deu_certo = move_uploaded_file($arquivo["tmp_name"], $caminho);
-
-    if($deu_certo){
-        $_SESSION['imagem'] = $caminho;
-    }
-
 }
 
 $tamanhos = new \BLL\Tamanho();
@@ -70,34 +46,24 @@ $listaCategoria = $categorias->Select();
                 <h2>Cadastro de produto</h2>
             </div>
 
-            <div class="row g-5">
-                <div class="col-md-5 col-lg-4 order-md-last">
-                    <h4 class="d-flex justify-content-between align-items-center mb-3">
-                        <span class="text-primary">imagem do produto</span>
-                    </h4>
-                    <div class="card">
-                        <img class="m-3" src="../img/<?php
-                                                    if (isset($_FILES["imagem"]) && !empty($_FILES["imagem"])) {
-                                                        echo $arquivo["tmp_name"];
-                                                    } else {
-                                                        echo "padrao.png";
-                                                    }
-                                                    ?>" alt="imagem produto">
-
-                        <form class="p-2" action="" method="post" enctype="multipart/form-data">
-                            <label>Selecione a imagem</label>
-
-                            <input type="file" name="imagem" accept="imagem/*" class="form-control mb-1" />
-                            <div class="d-flex justify-content-center">
-                                <button type="submit" class="btn btn-secondary">Carregar</button>
+            <form class="needs-validation" action="./validaCadastroProduto.php" novalidate>
+                <div class="row g-5">
+                    <div class="col-md-5 col-lg-4 order-md-last">
+                        <h4 class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="text-primary">imagem do produto</span>
+                        </h4>
+                        <div class="card">
+                            <img class="m-3" src="../img/padrao.png" alt="imagem produto">
+                            <div class="p-2">
+                                <label for="imagem" class="form-label" >Link da imagem</label>
+                                <input id="imagem" type="text" name="imagem" class="form-control mb-1">
                             </div>
-                        </form>
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-md-7 col-lg-8">
-                    <h4 class="mb-3">informações do produto</h4>
-                    <form class="needs-validation" novalidate>
+                    <div class="col-md-7 col-lg-8">
+                        <h4 class="mb-3">informações do produto</h4>
+
                         <div class="row g-3 mb-3">
                             <div class="col-12 mb-2">
                                 <label for="descricao" class="form-label">Descrição</label>
@@ -142,7 +108,7 @@ $listaCategoria = $categorias->Select();
 
                             <div class="col-md-5">
                                 <label for="categoria" class="form-label">Categoria</label>
-                                <select class="form-select" id="categoria" required>
+                                <select name="categoria" class="form-select" id="categoria" required>
                                     <option value="">Escolha</option>
                                     <?php
                                     foreach ($listaCategoria as $categoria) {
@@ -170,14 +136,15 @@ $listaCategoria = $categorias->Select();
 
                         <hr class="my-4">
 
+
                         <button class="w-100 btn btn-primary btn-lg" type="submit">Confirmar</button>
-                    </form>
+            </form>
 
-                </div>
-            </div>
-        </main>
+    </div>
+    </div>
+    </main>
 
-        <!--FOOTER-->
+    <!--FOOTER-->
 
     </div>
 
@@ -190,5 +157,3 @@ $listaCategoria = $categorias->Select();
 
 </html>
 <?php
-$_FILES['imagem']['tpm_name'] == null;
-?>

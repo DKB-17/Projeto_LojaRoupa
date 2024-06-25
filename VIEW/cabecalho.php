@@ -23,10 +23,10 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contato</a>
+                                <a class="nav-link" href="contato.php">Contato</a>
                             </li>
 
                             <li>
@@ -49,12 +49,11 @@
                                     Peças
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Masculina</a></li>
-                                    <li><a class="dropdown-item" href="#">Feminina</a></li>
+                                    <li><a class="dropdown-item" href="masculino.php">Masculina</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Carrinho</a></li>
+                                    <li><a class="dropdown-item" href="feminino.php">Feminina</a></li>
                                 </ul>
 
                             </li>

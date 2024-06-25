@@ -146,7 +146,7 @@
 
         <div class="col">
           <div class="card shadow-sm">
-          <img src="./img/Masculino/Blusa/casaco4.png" class="card-img-top" alt="Thumbnail" width="100%" height="450">            <div class="card-body">
+          <img src="./img/Masculino/Calça/calca1.png" class="card-img-top" alt="Thumbnail" width="100%" height="450">            <div class="card-body">
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <small class="text-body-secondary">R$50,00</small>
@@ -159,7 +159,7 @@
         </div>
         <div class="col">
           <div class="card shadow-sm">
-          <img src="./img/Masculino/Blusa/casaco5.png" class="card-img-top" alt="Thumbnail" width="100%" height="450">            <div class="card-body">
+          <img src="./img/Masculino/Calça/calca2.png" class="card-img-top" alt="Thumbnail" width="100%" height="450">            <div class="card-body">
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <small class="text-body-secondary">R$50,00</small>
@@ -172,7 +172,7 @@
         </div>
         <div class="col">
           <div class="card shadow-sm">
-          <img src="./img/Masculino/Blusa/casaco6.png" class="card-img-top" alt="Thumbnail" width="100%" height="450">            <div class="card-body">
+          <img src="./img/Masculino/Calça/calca3.png" class="card-img-top" alt="Thumbnail" width="100%" height="450">            <div class="card-body">
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <small class="text-body-secondary">R$50,00</small>
@@ -186,7 +186,7 @@
 
         <div class="col">
           <div class="card shadow-sm">
-<img src="./img/Masculino/Blusa/casaco7.png" class="card-img-top" alt="Thumbnail" width="100%" height="450">            <div class="card-body">
+<img src="./img/Masculino/Camiseta/camiseta1.png" class="card-img-top" alt="Thumbnail" width="100%" height="450">            <div class="card-body">
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <small class="text-body-secondary">R$50,00</small>
@@ -199,7 +199,7 @@
         </div>
         <div class="col">
           <div class="card shadow-sm">
-<img src="./img/Masculino/Blusa/casaco8.png" class="card-img-top" alt="Thumbnail" width="100%" height="450">            <div class="card-body">
+<img src="./img/Masculino/Camiseta/camiseta2.png" class="card-img-top" alt="Thumbnail" width="100%" height="450">            <div class="card-body">
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <small class="text-body-secondary">R$50,00</small>
@@ -212,7 +212,7 @@
         </div>
         <div class="col">
           <div class="card shadow-sm">
-<img src="./img/Masculino/Blusa/casaco9.png" class="card-img-top" alt="Thumbnail" width="100%" height="450">            <div class="card-body">
+<img src="./img/Masculino/Camiseta/camiseta3.png" class="card-img-top" alt="Thumbnail" width="100%" height="450">            <div class="card-body">
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <small class="text-body-secondary">R$50,00</small>

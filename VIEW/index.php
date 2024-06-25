@@ -43,57 +43,43 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="./img/Masculino/Blusa/corta_vento_azul.png" alt="" style="position: absolute; z-index: 0; opacity:0.5; width:100%; height:100%;">
+        <img src="./img/Masculino/Camiseta/camiseta1.png" alt="" style="position: absolute; z-index: 0; opacity:0.5; width:100%; height:100%;">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%"/></svg>
         <div class="container">
           <div class="carousel-caption text-start">
-            <h1>Example headline.</h1>
-            <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
           </div>
         </div>
       </div>
       <div class="carousel-item">
-      <img src="./img/Masculino/Blusa/corta_vento_verde.png" alt="" style="position: absolute; z-index: 0; opacity:0.5; width:100%; height:100%;">
+      <img src="./img/Masculino/Camiseta/camiseta2.png" alt="" style="position: absolute; z-index: 0; opacity:0.5; width:100%; height:100%;">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%"/></svg>
         <div class="container">
           <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Some representative placeholder content for the second slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            
           </div>
         </div>
       </div>
       <div class="carousel-item">
-      <img src="./img/Masculino/Blusa/corta_vento_ciano.png" alt="" style="position: absolute; z-index: 0; opacity:0.5; width:100%; height:100%;">
+      <img src="./img/Masculino/Shorts/short1.png" alt="" style="position: absolute; z-index: 0; opacity:0.5; width:100%; height:100%;">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%"/></svg>
         <div class="container">
           <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Some representative placeholder content for the second slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
           </div>
         </div>
       </div>
       <div class="carousel-item">
-      <img src="./img/Masculino/Blusa/corta_vento_marrom.png" alt="" style="position: absolute; z-index: 0; opacity:0.5; width:100%; height:100%;">
+      <img src="./img/Masculino/Shorts/short2.png" alt="" style="position: absolute; z-index: 0; opacity:0.5; width:100%; height:100%;">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%"/></svg>
         <div class="container">
           <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Some representative placeholder content for the second slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
           </div>
         </div>
       </div>
       <div class="carousel-item">
-      <img src="./img/Masculino/Blusa/casaco_cinza.png" alt="" style="position: absolute; z-index: 0; opacity:0.5; width:100%; height:100%;">
+      <img src="./img/Masculino/Shorts/short3.png" alt="" style="position: absolute; z-index: 0; opacity:0.5; width:100%; height:100%;">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%"/></svg>
         <div class="container">
           <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Some representative placeholder content for the second slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
           </div>
         </div>
       </div>
@@ -117,81 +103,40 @@
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col">
           <div class="card shadow-sm">
-          <img src="./img/Masculino/Blusa/casaco_cinza.png" class="card-img-top" alt="Thumbnail" width="100%" height="225">
+          <img src="./img/Masculino/Blusa/casaco1.png" class="card-img-top" alt="Thumbnail" width="100%" height="450">
             <div class="card-body">
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <div class="d-flex justify-content-between align-items-center">
+                <small class="text-body-secondary">R$50,00</small>
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                 </div>
-                <small class="text-body-secondary">R$50,00</small>
               </div>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card shadow-sm">
-          <img src="./img/Masculino/Blusa/casaco_cinza.png" class="card-img-top" alt="Thumbnail" width="100%" height="225">            <div class="card-body">
+          <img src="./img/Masculino/Blusa/casaco2.png" class="card-img-top" alt="Thumbnail" width="100%" height="450">            <div class="card-body">
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <div class="d-flex justify-content-between align-items-center">
+                <small class="text-body-secondary">R$50,00</small>
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-
                 </div>
-                <small class="text-body-secondary">R$50,00</small>
               </div>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card shadow-sm">
-          <img src="./img/Masculino/Blusa/casaco_cinza.png" class="card-img-top" alt="Thumbnail" width="100%" height="225">            <div class="card-body">
+          <img src="./img/Masculino/Blusa/casaco3.png" class="card-img-top" alt="Thumbnail" width="100%" height="450">            <div class="card-body">
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <div class="d-flex justify-content-between align-items-center">
+                <small class="text-body-secondary">R$50,00</small>
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                 </div>
-                <small class="text-body-secondary">R$50,00</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
-          <img src="./img/Masculino/Blusa/casaco_cinza.png" class="card-img-top" alt="Thumbnail" width="100%" height="225">            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                </div>
-                <small class="text-body-secondary">R$50,00</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-<img src="./img/Masculino/Blusa/casaco_cinza.png" class="card-img-top" alt="Thumbnail" width="100%" height="225">            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                </div>
-                <small class="text-body-secondary">R$50,00</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-<img src="./img/Masculino/Blusa/casaco_cinza.png" class="card-img-top" alt="Thumbnail" width="100%" height="225">            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                </div>
-                <small class="text-body-secondary">R$50,00</small>
               </div>
             </div>
           </div>
@@ -199,39 +144,79 @@
 
         <div class="col">
           <div class="card shadow-sm">
-<img src="./img/Masculino/Blusa/casaco_cinza.png" class="card-img-top" alt="Thumbnail" width="100%" height="225">            <div class="card-body">
+          <img src="./img/Masculino/Blusa/casaco4.png" class="card-img-top" alt="Thumbnail" width="100%" height="450">            <div class="card-body">
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <div class="d-flex justify-content-between align-items-center">
+                <small class="text-body-secondary">R$50,00</small>
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                 </div>
-                <small class="text-body-secondary">R$50,00</small>
               </div>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card shadow-sm">
-<img src="./img/Masculino/Blusa/casaco_cinza.png" class="card-img-top" alt="Thumbnail" width="100%" height="225">            <div class="card-body">
+          <img src="./img/Masculino/Blusa/casaco5.png" class="card-img-top" alt="Thumbnail" width="100%" height="450">            <div class="card-body">
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <div class="d-flex justify-content-between align-items-center">
+                <small class="text-body-secondary">R$50,00</small>
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                 </div>
-                <small class="text-body-secondary">R$50,00</small>
               </div>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card shadow-sm">
-<img src="./img/Masculino/Blusa/casaco_cinza.png" class="card-img-top" alt="Thumbnail" width="100%" height="225">            <div class="card-body">
+          <img src="./img/Masculino/Blusa/casaco6.png" class="card-img-top" alt="Thumbnail" width="100%" height="450">            <div class="card-body">
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <div class="d-flex justify-content-between align-items-center">
+                <small class="text-body-secondary">R$50,00</small>
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+<img src="./img/Masculino/Blusa/casaco7.png" class="card-img-top" alt="Thumbnail" width="100%" height="450">            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
                 <small class="text-body-secondary">R$50,00</small>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+<img src="./img/Masculino/Blusa/casaco8.png" class="card-img-top" alt="Thumbnail" width="100%" height="450">            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-body-secondary">R$50,00</small>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+<img src="./img/Masculino/Blusa/casaco9.png" class="card-img-top" alt="Thumbnail" width="100%" height="450">            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-body-secondary">R$50,00</small>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div>
               </div>
             </div>
           </div>

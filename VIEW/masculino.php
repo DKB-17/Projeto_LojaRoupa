@@ -54,7 +54,7 @@
               <div class="d-flex justify-content-between align-items-center">
                 <small class="text-body-secondary">R$50,00</small>
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <a href="viewproduto.php" class="btn btn-sm btn-outline-secondary">View</a>
                 </div>
               </div>
             </div>
@@ -67,7 +67,7 @@
               <div class="d-flex justify-content-between align-items-center">
                 <small class="text-body-secondary">R$50,00</small>
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <a href="viewproduto.php" class="btn btn-sm btn-outline-secondary">View</a>
                 </div>
               </div>
             </div>
@@ -80,7 +80,7 @@
               <div class="d-flex justify-content-between align-items-center">
                 <small class="text-body-secondary">R$50,00</small>
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <a href="viewproduto.php" class="btn btn-sm btn-outline-secondary">View</a>
                 </div>
               </div>
             </div>
@@ -94,7 +94,7 @@
               <div class="d-flex justify-content-between align-items-center">
                 <small class="text-body-secondary">R$50,00</small>
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <a href="viewproduto.php" class="btn btn-sm btn-outline-secondary">View</a>
                 </div>
               </div>
             </div>
@@ -107,7 +107,7 @@
               <div class="d-flex justify-content-between align-items-center">
                 <small class="text-body-secondary">R$50,00</small>
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <a href="viewproduto.php" class="btn btn-sm btn-outline-secondary">View</a>
                 </div>
               </div>
             </div>
@@ -120,7 +120,7 @@
               <div class="d-flex justify-content-between align-items-center">
                 <small class="text-body-secondary">R$50,00</small>
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <a href="viewproduto.php" class="btn btn-sm btn-outline-secondary">View</a>
                 </div>
               </div>
             </div>
@@ -134,7 +134,7 @@
               <div class="d-flex justify-content-between align-items-center">
                 <small class="text-body-secondary">R$50,00</small>
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <a href="viewproduto.php" class="btn btn-sm btn-outline-secondary">View</a>
                 </div>
               </div>
             </div>
@@ -147,7 +147,7 @@
               <div class="d-flex justify-content-between align-items-center">
                 <small class="text-body-secondary">R$50,00</small>
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <a href="viewproduto.php" class="btn btn-sm btn-outline-secondary">View</a>
                 </div>
               </div>
             </div>
@@ -160,7 +160,7 @@
               <div class="d-flex justify-content-between align-items-center">
                 <small class="text-body-secondary">R$50,00</small>
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <a href="viewproduto.php" class="btn btn-sm btn-outline-secondary">View</a>
                 </div>
               </div>
             </div>

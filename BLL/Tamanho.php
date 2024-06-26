@@ -12,6 +12,20 @@ class Tamanho{
         $dalTamanho = new \DAL\Tamanho();
         return $dalTamanho->Select();
     }
+
+    public function SelectByDescricao(\MODEL\Tamanho $tamanho){
+        $dalTamanho = new \DAL\Tamanho();
+        $tamanho->setDescricao(strtolower($tamanho->getDescricao()));
+        return $dalTamanho->SelectByDescricao($tamanho->getDescricao());
+    }
+
+
+    public function Insert(\MODEL\Tamanho $tamanho){
+        $dalTamanho = new \DAL\Tamanho();
+        $tamanho->setDescricao(strtoupper($tamanho->getDescricao()));
+        return $dalTamanho->Insert($tamanho);
+
+    }
 }
 
 

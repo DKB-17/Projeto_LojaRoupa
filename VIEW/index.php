@@ -32,12 +32,15 @@
     ?>
 
     
-    
     <main>
     
     
     <?php
         include "./carrosel.php"; 
+    ?>
+
+    <?php
+        include "./TAMANHO/lstTamanho.php"; 
     ?>
 
 

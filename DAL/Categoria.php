@@ -26,6 +26,36 @@ class Categoria{
         return $listaCategoria;
         
     }
+    public function SelectByDescricao(string $descricao){
+        $sql = "Select * from categoria where descricao like ?;";
+
+        $con = Conexao::conectar();
+        $query = $con->prepare($sql);
+        $query->execute([$descricao]);
+        $result = $query->fetch(\PDO::FETCH_ASSOC);
+        $con = Conexao::desconectar();
+
+        if($result != 0){        
+            $categoria = new \MODEL\Categoria();
+            $categoria->setId($result['id']);
+            $categoria->setDescricao($result['descricao']);
+    
+            return $categoria;
+        }
+        return null;
+        
+    }
+
+    public function Insert(\MODEL\Categoria $categoria){
+        $sql = "INSERT INTO categoria (descricao) VALUE (?);";
+        $con = Conexao::conectar();
+        $query = $con->prepare($sql);
+        $result = $query->execute([$categoria->getDescricao()]);
+        $con = Conexao::desconectar();
+
+        return $result;
+
+    }
 
 }
 

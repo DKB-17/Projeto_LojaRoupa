@@ -5,9 +5,7 @@ include_once "C:/xampp/htdocs/Projeto_LojaRoupa/BLL/Tamanho.php";
 
 session_start();
 if (isset($_SESSION['emailLogin']) && !empty($_SESSION['emailLogin'])) {
-    if (!($_SESSION['emailLogin'] == 'diegobritosilva@gmail.com')) {
-        header("location:../index.php");
-    }
+    
 } else {
     header("location:../index.php");
 }

@@ -29,7 +29,7 @@ if (isset($_POST['nome']) && (isset($_POST['cpf'])) && (isset($_POST['email'])) 
         $cliente->setIdcidade($_POST['cidade']);
 
         $result = $bllCliente->Insert($cliente);
-
+        header('location:../index.php');
     }else{
         $_SESSION['registro-ja-existe'] = 'true';
         header('location:./cadastro.php');

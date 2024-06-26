@@ -24,6 +24,37 @@ class Tamanho{
         return $listaTamanho;
     }
 
+    public function SelectByDescricao(string $descricao){
+        $sql = 'select * from tamanho where descricao like ?;';
+        $con = Conexao::conectar();
+        $query = $con->prepare($sql);
+        $query->execute([$descricao]);
+        $linha = $query->fetch(\PDO::FETCH_ASSOC);
+        $con = Conexao::desconectar();
+
+        if($linha != 0){
+
+            $tamanho = new \MODEL\Tamanho();
+            $tamanho->setId($linha['id']);
+            $tamanho->setDescricao($linha['descricao']);
+
+            return $tamanho;
+        }
+        return null;
+
+    }
+
+
+    public function Insert(\MODEL\Tamanho $tamanho){
+        $sql = "INSERT INTO tamanho (descricao) VALUE (?);";
+        $con = Conexao::conectar();
+        $query = $con->prepare($sql);
+        $result = $query->execute([$tamanho->getDescricao()]);
+        $con = Conexao::desconectar();
+
+        return $result;
+    }
+
 }
 
 ?>

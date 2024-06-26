@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 11/06/2024 às 01:21
+-- Tempo de geração: 26/06/2024 às 03:09
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -31,6 +31,15 @@ CREATE TABLE `categoria` (
   `id` int(3) NOT NULL,
   `descricao` varchar(120) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `categoria`
+--
+
+INSERT INTO `categoria` (`id`, `descricao`) VALUES
+(1, 'camiseta'),
+(2, 'camisa'),
+(3, 'blusa');
 
 -- --------------------------------------------------------
 
@@ -75,7 +84,9 @@ CREATE TABLE `cliente` (
 --
 
 INSERT INTO `cliente` (`id`, `nome`, `cpf`, `email`, `senha`, `prefixo`, `contato`, `data_nascimento`, `idCidade`) VALUES
-(1, 'Diego Brito da Silva', '469.005.598-08', 'diegobritosilva@gmail.com', 'e96d16e0e97ce4f1bc397156eb34c9a8', 55, '99912-4567', '2004-03-17', 1);
+(1, 'Diego Brito da Silva', '469.005.598-08', 'diegobritosilva@gmail.com', 'e96d16e0e97ce4f1bc397156eb34c9a8', 55, '99912-4567', '2004-03-17', 1),
+(2, 'Bruno Coutinho terribile', '123.456.587-10', 'bruno@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 55, '1899805-16', '2005-02-22', 1),
+(3, 'Felipe', '206.596.908-70', 'felipe@gmail.com', '36f97e87b3d16a9a374f4b457c053c6f', 55, '1866665-98', '2024-06-24', 1);
 
 -- --------------------------------------------------------
 
@@ -120,6 +131,13 @@ CREATE TABLE `genero` (
   `id` int(1) NOT NULL,
   `genero` varchar(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `genero`
+--
+
+INSERT INTO `genero` (`id`, `genero`) VALUES
+(1, 'c');
 
 -- --------------------------------------------------------
 
@@ -173,6 +191,14 @@ CREATE TABLE `tamanho` (
   `id` int(2) NOT NULL,
   `descricao` varchar(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `tamanho`
+--
+
+INSERT INTO `tamanho` (`id`, `descricao`) VALUES
+(1, 'M'),
+(3, 'G');
 
 -- --------------------------------------------------------
 
@@ -309,7 +335,7 @@ ALTER TABLE `venda`
 -- AUTO_INCREMENT de tabela `categoria`
 --
 ALTER TABLE `categoria`
-  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de tabela `cidade`
@@ -321,7 +347,7 @@ ALTER TABLE `cidade`
 -- AUTO_INCREMENT de tabela `cliente`
 --
 ALTER TABLE `cliente`
-  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de tabela `cor`
@@ -339,7 +365,7 @@ ALTER TABLE `forma_pg`
 -- AUTO_INCREMENT de tabela `genero`
 --
 ALTER TABLE `genero`
-  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de tabela `produto`
@@ -351,7 +377,7 @@ ALTER TABLE `produto`
 -- AUTO_INCREMENT de tabela `tamanho`
 --
 ALTER TABLE `tamanho`
-  MODIFY `id` int(2) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de tabela `uf`

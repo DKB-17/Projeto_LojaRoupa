@@ -24,6 +24,7 @@
     <?php include "./cabecalho.php"; ?>
     
 <main class="container mt-5">
+
     <div class="row">
         <div class="col-md-6">
             <h1 class="my-5 ps-4 pt-4 ms-5">Contato</h1>
@@ -45,19 +46,28 @@
                         <label for="validationTooltipUsername">Email</label>
                         <div class="input-group">
                             <div class="input-group-prepend">
-                                <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                            <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
                             </div>
                             <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Email" aria-describedby="validationTooltipUsernamePrepend" required>
                             <div class="valid-tooltip">OK!</div>
                             <div class="invalid-tooltip">Por favor, escolha um email válido e único.</div>
                         </div>
                     </div>
+                    <div class="col-md-12 mb-3">
+                        <label for="validationTooltip03">Comentário</label>
+                        <textarea class="form-control" id="validationTooltip03" placeholder="Escreva seu comentário aqui" style="height:150px;"required></textarea>
+                        <div class="valid-tooltip">OK!</div>
+                        <div class="invalid-tooltip">Por favor, escreva seu comentário.</div>
+                    </div>
                 </div>
-                <button class="btn btn-primary ms-5" type="submit">Enviar</button>
+               
+                <button class="btn btn-primary d-block mx-auto mt-3 ms-5" style="width: 90%;">Enviar</button>
+
             </form>
         </div>
-        <div class="col-md-6 d-flex align-items-center justify-content-center">
-            <img src=".img/logocontato.jpeg" class="img-fluid" alt="Imagem de Contato" onerror="this.onerror=null; this.src='img/logocontato.jpeg';">
+
+        <div class="col-md-6 mt-5 b-8 d-flex align-items-center justify-content-center">
+            <img src=".img/logocontato.jpeg" class="img-fluid rounded-4" alt="Imagem de Contato" onerror="this.onerror=null; this.src='img/logocontato.jpeg';">
         </div>
     </div>
 </main>

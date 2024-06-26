@@ -35,67 +35,10 @@
     
     <main>
     
-    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./img/Masculino/Camiseta/camiseta1.png" alt="" style="position: absolute; z-index: 0; opacity:0.5; width:100%; height:100%;">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%"/></svg>
-        <div class="container">
-          <div class="carousel-caption text-start">
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-      <img src="./img/Masculino/Camiseta/camiseta2.png" alt="" style="position: absolute; z-index: 0; opacity:0.5; width:100%; height:100%;">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%"/></svg>
-        <div class="container">
-          <div class="carousel-caption">
-            
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-      <img src="./img/Masculino/Shorts/short1.png" alt="" style="position: absolute; z-index: 0; opacity:0.5; width:100%; height:100%;">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%"/></svg>
-        <div class="container">
-          <div class="carousel-caption">
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-      <img src="./img/Masculino/Shorts/short2.png" alt="" style="position: absolute; z-index: 0; opacity:0.5; width:100%; height:100%;">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%"/></svg>
-        <div class="container">
-          <div class="carousel-caption">
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-      <img src="./img/Masculino/Shorts/short3.png" alt="" style="position: absolute; z-index: 0; opacity:0.5; width:100%; height:100%;">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%"/></svg>
-        <div class="container">
-          <div class="carousel-caption">
-          </div>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>  
-
+    
+    <?php
+        include "./carrosel.php"; 
+    ?>
 
 
 

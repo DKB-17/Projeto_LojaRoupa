@@ -34,15 +34,33 @@
     
     
     <main>
-    
-    <?php
-        include "./carrosel.php"; 
-    ?>
 
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mt-5 b-8 d-flex align-items-center justify-content-center">
+                    <img src="./img/Masculino/Camiseta/camiseta9.png" class="img-fluid rounded-4" alt="Imagem Grande">
+                </div>
+                <div class="col-md-6">
+                    <h1 class="mt-5 my-5 ps-2 pt-4 ms-5" style="font-size:60px">Camiseta</h1>
+                    <h2 class="mt-4 ps-2 ms-5" style="font-size:32px;">Preta com desenho colorido</h2>
+                    <p class="mt-4 ps-2 ms-5" style="font-size:32px;"><strong>R$60,00</strong></p>
+                    <p class="mt-4 ps-2 ms-5" style="font-size:22px;">Camiseta masculina preta com desenhos coloridos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <div class="album py-5">
+        <div class="container">
+            <!-- Restante do seu código para exibir os produtos -->
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <!-- Coloque aqui os seus cards de produtos -->
+            </div>
+        </div>
+    </div>
 
-
-  <div class="album py-5">
+    <div class="album py-5">
     <div class="container">
 
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
@@ -169,12 +187,7 @@
       </div>
     </div>
   </div>
-
     </main>
-
-    
-
-
     
 
     <?php
@@ -186,6 +199,3 @@
     </script>
 
 </body>
-
-
-</html>

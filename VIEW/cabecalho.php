@@ -36,6 +36,8 @@
                                         echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="./PRODUTO/cadastroProduto.php">Cadastrar Produto</a></li>';
                                         echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="./TAMANHO/cadastroTamanho.php">Cadastrar Tamanho</a></li>';
                                         echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="./CATEGORIA/cadastroCategoria.php">Cadastrar Categoria</a></li>';
+                                        echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="./CIDADE/cadastroCidade.php">Cadastrar Cidade</a></li>';
+                                        echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="./UF/cadastroUF.php">Cadastrar UF</a></li>';
                             
                                     }else{
                                         echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="./login.php">Login</a></li>';

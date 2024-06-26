@@ -21,7 +21,35 @@
             return $listaUf;
         }
 
+        public function SelectByUf(\MODEL\Uf $uf){
+            $sql = 'Select * from uf where uf like ?;';
+            $con = Conexao::conectar();
+            $query = $con->query($sql);
+            $query->execute([$uf->getUf()]);
+            $linha = $query->fetch(\PDO::FETCH_ASSOC);
+            $con = Conexao::desconectar();
+
+            if($linha != 0){
+                $u = new \MODEL\Uf();
+                $u->setId($linha['id']);
+                $u->setUf($linha['UF']);
+
+                return $u;
+            }
+            return null;
+
+        }
+
+        public function Insert(\MODEL\Uf $uf){
+            $sql = 'INSERT INTO uf (uf) VALUE (?);';
+            $con = Conexao::conectar();
+            $query = $con->prepare($sql);
+            $result = $query->execute([$uf->getUf()]);
+            $con = Conexao::desconectar();
+
+            return $result;
+        }
+
 
     }
-
 ?>

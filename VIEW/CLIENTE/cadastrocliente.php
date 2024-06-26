@@ -75,7 +75,7 @@ $listaUf = $bllUf->Select();
             </div>
 
             <div class="form-floating mb-1">
-                <select class="form-control p-2" onChange="selectCidade()" id="cidade" name="cidade" required>
+                <select class="form-control p-2" id="cidade" name="cidade" required>
                     <option>Cidade</option>
                     <?php
                     foreach ($listaCidade as $cidade) {

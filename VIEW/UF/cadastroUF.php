@@ -37,14 +37,14 @@ if (isset($_SESSION['emailLogin']) && !empty($_SESSION['emailLogin'])) {
                 <h2>Cadastro de UF</h2>
             </div>
 
-            <div class="col">
+            <div class="col text-center">
                 <h4 class="mb-3">informações da UF</h4>
 
                 <form class="needs-validation" method="post" action="./validaCadastroUF.php" novalidate>
                     <div class="row">
                         <div class="col">
                             <label for="uf">Unidade Federativa - UF</label>
-                            <input type="text" id="uf" name="uf" class="form-control" placeholder="" minlength="2" maxlength="2" required>
+                            <input type="text" id="uf" name="uf" class="form-control d-flex w-50 " placeholder="Digite duas letras para cadastrar a UF" minlength="2" maxlength="2" required>
                             <div class="invalid-feedback">
                                 Necessario duas letras para cadastrar a UF
                             </div>
@@ -54,7 +54,7 @@ if (isset($_SESSION['emailLogin']) && !empty($_SESSION['emailLogin'])) {
                     <hr class="my-4">
 
 
-                    <button class="w-100 btn btn-primary btn-lg" type="submit">Confirmar</button>
+                    <button class="w-50 btn btn-primary btn-lg text-center" type="submit">Confirmar</button>
                 </form>
             </div>
 

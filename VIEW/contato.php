@@ -16,7 +16,7 @@
     
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
-    <link href="./checkout.css" rel="stylesheet">
+    <link href="./Validação/checkout.css" rel="stylesheet">
 </head>
 
 <body>
@@ -25,7 +25,7 @@
     
 <main class="container mt-5">
 
-    <div class="row">
+    <div class="row g-5">
         <div class="col-md-6">
             <h1 class="my-5 ps-4 pt-4 ms-5">Contato</h1>
             <h2 class="pt-2 ps-4 ms-5">Descreva seu comentário</h2>
@@ -66,7 +66,7 @@
             </form>
         </div>
 
-        <div class="col-md-6 mt-5 b-8 d-flex align-items-center justify-content-center">
+        <div class="col-md-6 mt-5 d-flex align-items-center justify-content-center">
             <img src=".img/logocontato.jpeg" class="img-fluid rounded-4" alt="Imagem de Contato" onerror="this.onerror=null; this.src='img/logocontato.jpeg';">
         </div>
     </div>
@@ -77,6 +77,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
-    <script src="./checkout.js"></script>
+    <script src="./Validação/checkout.js"></script>
 </body>
 </html>

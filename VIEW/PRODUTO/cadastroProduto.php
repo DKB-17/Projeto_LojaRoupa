@@ -33,7 +33,7 @@ $listaCategoria = $categorias->Select();
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <link href="./checkout.css" rel="stylesheet">
+    <link href="./Validação/checkout.css" rel="stylesheet">
 </head>
 
 <body class="bg-body-tertiary">
@@ -135,7 +135,7 @@ $listaCategoria = $categorias->Select();
                         <hr class="my-4">
 
 
-                        <button class="w-100 btn btn-primary btn-lg" type="submit">Confirmar</button>
+                        <button class="w-50 btn btn-primary btn-lg" type="submit">Confirmar</button>
             </form>
 
     </div>
@@ -148,7 +148,7 @@ $listaCategoria = $categorias->Select();
 
     <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
-    <script src="./checkout.js"></script>
+    <script src="./Validação/checkout.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 </body>

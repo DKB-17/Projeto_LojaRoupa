@@ -144,15 +144,15 @@ $lstUf = $bllUf->Select();
                                         </thead>
                                         <tbody>
                                         <tr class="text-center align-items-center">
-                                            <th scope="row" class="align-middle">1</th>
-                                            <td class="align-middle"><img src="./img/Feminino/Blusa/blusa1f.png" style="height: 150px; width: 100px;" alt="a"></td>
-                                            <td class="align-middle">3</td>
+                                            <th scope="row" class="align-middle">3</th>
                                             <td class="align-middle">Cleiton</td>
                                             <td class="align-middle">666.666.666-66</td>
-                                            <td class="align-middle">18</td>
-                                            <td class="align-middle">1899999-9999</td>
+                                            <td class="align-middle">abcd@gmail.com</td>
                                             <td class="align-middle"></td>
-                                            <td class="align-middle">10</td>
+                                            <td class="align-middle">55</td>
+                                            <td class="align-middle">1899999-9999</td>
+                                            <td class="align-middle">2004-11-26</td>
+                                            <td class="align-middle">3</td>
                                             <td class="align-middle"><a href="."><i class="bi bi-cloud-upload-fill" style="font-size: 40px;"></i></a></td>
                                             <td class="align-middle"><a href="."><i class="bi bi-trash3-fill" style="font-size: 40px;"></a></i></td>
                                         </tr>
@@ -161,13 +161,88 @@ $lstUf = $bllUf->Select();
                                     </table>
                                 
                                 
+                                </div>
+                                <div class="tab-pane fade" id="list-messages" role="tabpanel"
+                                    aria-labelledby="list-messages-list">
+                                
+                                    <table class="table table-hover text-center">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">ID</th>
+                                                <th scope="col">Descricao</th>
+                                                <th>  </th>
+                                                <th>  </th>
+                                                <th>  </th>
+                                                <th>  </th>
+                                                <th>  </th>
+                                                <th>  </th>
+                                                <th>  </th>
+                                                <th>  </th>
+                                                <th scope="col">Update</th>
+                                                <th scope="col">Delete</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr class="text-center align-items-center">
+                                            <th scope="row" class="align-middle">3</th>
+                                            <td class="align-middle">Blusinha</td>
+                                            <td>  </td>
+                                            <td>  </td>
+                                            <td>  </td>
+                                            <td>  </td>
+                                            <td>  </td>
+                                            <td>  </td>
+                                            <td>  </td>
+                                            <td>  </td>
+                                            <td class="align-middle"><a href="."><i class="bi bi-cloud-upload-fill" style="font-size: 40px;"></i></a></td>
+                                            <td class="align-middle"><a href="."><i class="bi bi-trash3-fill" style="font-size: 40px;"></a></i></td>
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
                                 
                                 
                                 </div>
-                                <div class="tab-pane fade" id="list-messages" role="tabpanel"
-                                    aria-labelledby="list-messages-list">...</div>
                                 <div class="tab-pane fade" id="list-settings" role="tabpanel"
-                                    aria-labelledby="list-settings-list">...</div>
+                                    aria-labelledby="list-settings-list">
+                                
+                                    <table class="table table-hover text-center">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">ID</th>
+                                                <th scope="col">Descricao</th>
+                                                <th>  </th>
+                                                <th>  </th>
+                                                <th>  </th>
+                                                <th>  </th>
+                                                <th>  </th>
+                                                <th>  </th>
+                                                <th>  </th>
+                                                <th>  </th>
+                                                <th scope="col">Update</th>
+                                                <th scope="col">Delete</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr class="text-center align-items-center">
+                                            <th scope="row" class="align-middle">6</th>
+                                            <td class="align-middle">PP</td>
+                                            <td>  </td>
+                                            <td>  </td>
+                                            <td>  </td>
+                                            <td>  </td>
+                                            <td>  </td>
+                                            <td>  </td>
+                                            <td>  </td>
+                                            <td>  </td>
+                                            <td class="align-middle"><a href="."><i class="bi bi-cloud-upload-fill" style="font-size: 40px;"></i></a></td>
+                                            <td class="align-middle"><a href="."><i class="bi bi-trash3-fill" style="font-size: 40px;"></a></i></td>
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+                                
+                                </div>
                             </div>
                         </div>
                     </div>

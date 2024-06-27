@@ -5,9 +5,17 @@ include_once "C:/xampp/htdocs/Projeto_LojaRoupa/BLL/Tamanho.php";
 
 session_start();
 if (isset($_SESSION['emailLogin']) && !empty($_SESSION['emailLogin'])) {
-    
+    if(isset($_SESSION["erroCadastro"]) && $_SESSION["erroCadastro"]){
+        echo "<script>alert('Falha ao cadastrar produto')</script>";
+        unset($_SESSION["erroCadastro"]);
+    }
 } else {
     header("location:../index.php");
+}
+
+if(isset($_SESSION["sucessoCadastro"]) && $_SESSION["sucessoCadastro"]){
+    echo "<script>alert('Cadastro do produto realizado com sucesso')</script>";
+    unset($_SESSION["sucessoCadastro"]);
 }
 
 $tamanhos = new \BLL\Tamanho();
@@ -34,6 +42,7 @@ $listaCategoria = $categorias->Select();
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <link href="./Validação/checkout.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
 </head>
 
 <body class="bg-body-tertiary">
@@ -44,17 +53,19 @@ $listaCategoria = $categorias->Select();
                 <h2>Cadastro de produto</h2>
             </div>
 
-            <form class="needs-validation" action="./validaCadastroProduto.php" novalidate>
+            <form enctype="multipart/form-data" method="post" class="needs-validation" action="./validaCadastroProduto.php" novalidate>
                 <div class="row g-5">
                     <div class="col-md-5 col-lg-4 order-md-last">
                         <h4 class="d-flex justify-content-between align-items-center mb-3">
                             <span class="text-primary">imagem do produto</span>
                         </h4>
-                        <div class="card">
-                            <img class="m-3" src="../img/padrao.png" alt="imagem produto">
-                            <div class="p-2">
-                                <label for="imagem" class="form-label" >Link da imagem</label>
-                                <input id="imagem" type="text" name="imagem" class="form-control mb-1">
+                        <div class="card d-flex">
+                            <!-- <img class="m-3" src="../img/padrao.png" alt="imagem produto"> -->
+                            <div class=" p-2 justify-content-center">
+                                <label for="picture__input" class="form-label picture" tabindex="0">
+                                    <input id="picture__input" type="file" accept="image/*" name="imagem" class="form-control picture__input">
+                                    <span class="picture__image"></span>
+                                </label>
                             </div>
                         </div>
                     </div>
@@ -126,7 +137,7 @@ $listaCategoria = $categorias->Select();
                             <?php
                             foreach ($listaTamanho as $tamanho) {
                                 echo '  <div class="form-check">
-                                            <input id="tamanho" name="tamanho" type="radio" class="form-check-input" required>
+                                            <input id="tamanho" name="tamanho" type="radio" class="form-check-input" value="'.$tamanho->getId().'" required>
                                             <label class="form-check-label" for="tamanho">' . $tamanho->getDescricao() . '</label>
                                         </div>';
                             } ?>
@@ -149,6 +160,7 @@ $listaCategoria = $categorias->Select();
     <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
     <script src="./Validação/checkout.js"></script>
+    <script src="./script.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 </body>

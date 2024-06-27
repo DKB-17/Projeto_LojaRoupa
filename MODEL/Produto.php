@@ -7,7 +7,8 @@
         private ?int $idCategoria;
         private ?int $idTamanho;
         private ?string $descricao;
-        private ?string $imagem;
+        private ?string $caminho_imagem;
+        private string $data_criacao;
         private ?float $valor_compra;
         private ?float $valor_venda;
         private ?int $estoque;
@@ -27,8 +28,11 @@
         public function getDescricao(){return $this->descricao;}
         public function setDescricao(string $descricao){$this->descricao=$descricao;}
 
-        public function getImagem(){return $this->imagem;}
-        public function setImagem(string $imagem){$this->imagem=$imagem;}
+        public function getCaminhoImagem(){return $this->caminho_imagem;}
+        public function setCaminhoImagem(string $caminho_imagem){$this->caminho_imagem=$caminho_imagem;}
+
+        public function getDataCriacao(){return $this->data_criacao;}
+        public function setDataCriacao(string $data_criacao){$this->data_criacao=$data_criacao;}
 
         public function getValorCompra(){return $this->valor_compra;}
         public function setValorCompra(float $valor_compra){$this->valor_compra=$valor_compra;}

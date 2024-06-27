@@ -8,7 +8,6 @@ if (isset($_SESSION['emailLogin']) && !empty($_SESSION['emailLogin'])) {
             echo "<script>alert('O tamanho desejado ja esta registrado')</script>";
             unset($_SESSION["erroCadastro"]);
         }
-
     }
     
 } else {

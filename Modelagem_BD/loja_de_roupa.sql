@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 26/06/2024 às 03:09
+-- Tempo de geração: 27/06/2024 às 12:11
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -59,7 +59,8 @@ CREATE TABLE `cidade` (
 
 INSERT INTO `cidade` (`idCidade`, `cidade`, `idUF`) VALUES
 (1, 'Assis', 1),
-(2, 'Candido Mota', 1);
+(2, 'Candido Mota', 1),
+(3, 'matinho', 1);
 
 -- --------------------------------------------------------
 
@@ -163,12 +164,21 @@ CREATE TABLE `produto` (
   `idCategoria` int(3) NOT NULL,
   `idTamanho` int(2) NOT NULL,
   `descricao` varchar(100) NOT NULL,
-  `imagem` varchar(50) NOT NULL COMMENT 'caminho da imagem do produto',
+  `caminho_imagem` varchar(50) NOT NULL COMMENT 'caminho da imagem do produto',
+  `data_criacao` datetime NOT NULL DEFAULT current_timestamp(),
   `valor_compra` decimal(6,2) UNSIGNED NOT NULL,
   `valor_venda` decimal(6,2) UNSIGNED NOT NULL,
   `estoque` int(3) UNSIGNED DEFAULT NULL,
   `estoque_minimo` int(2) UNSIGNED NOT NULL DEFAULT 1
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `produto`
+--
+
+INSERT INTO `produto` (`idProduto`, `idCategoria`, `idTamanho`, `descricao`, `caminho_imagem`, `data_criacao`, `valor_compra`, `valor_venda`, `estoque`, `estoque_minimo`) VALUES
+(1, 1, 1, 'Camisa gucci', './img/imgProdutos/667cfef470ec4.png', '2024-06-27 02:56:04', 12.22, 12.22, 2, 3),
+(2, 1, 3, 'Camisinha de morango', './img/imgProdutos/667d02eef2557.png', '2024-06-27 03:13:02', 4.50, 6.00, 12, 4);
 
 -- --------------------------------------------------------
 
@@ -341,7 +351,7 @@ ALTER TABLE `categoria`
 -- AUTO_INCREMENT de tabela `cidade`
 --
 ALTER TABLE `cidade`
-  MODIFY `idCidade` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `idCidade` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de tabela `cliente`
@@ -371,7 +381,7 @@ ALTER TABLE `genero`
 -- AUTO_INCREMENT de tabela `produto`
 --
 ALTER TABLE `produto`
-  MODIFY `idProduto` int(3) NOT NULL AUTO_INCREMENT;
+  MODIFY `idProduto` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de tabela `tamanho`

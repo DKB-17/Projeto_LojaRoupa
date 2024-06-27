@@ -18,5 +18,16 @@ class Produto{
         return $dalProduto->Insert($produto);
     }
 
+    public function Delete(int $idProduto){
+     $dalProduto = new \DAL\Produto();
+     return $dalProduto->Delete($idProduto);   
+    }
+
+    public function Update(\MODEL\Produto $produto){
+        $dalProduto = new \DAL\Produto();
+        return $dalProduto->Update($produto);
+
+    }
+
 }
 ?>

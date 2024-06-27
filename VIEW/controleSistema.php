@@ -38,12 +38,23 @@ $lstUf = $bllUf->Select();
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
 </head>
 
 
 <body class="d-flex align-items-center py-4 bg-body-tertiary">
 
-    <main class="form-signin w-100 m-auto">
+<?php
+  include "./cabecalho.php";
+  ?>
+
+    <main class="form-signin w-100 mt-5">
         <div>
             <div class="d-flex justify-content-center">
                 <img class="mb-2" src="./img/logobeyou.png" alt="" width="200" height="100" ">
@@ -71,42 +82,167 @@ $lstUf = $bllUf->Select();
                             <div class="tab-content" id="nav-tabContent">
                                 <div class="tab-pane fade show active" id="list-home" role="tabpanel"
                                     aria-labelledby="list-home-list">
-                                    <table class="table table-hover">
+
+                                    <table class="table table-hover text-center">
                                         <thead>
                                             <tr>
-                                                <th scope="col">#</th>
-                                                <th scope="col">First</th>
-                                                <th scope="col">Last</th>
-                                                <th scope="col">Handle</th>
+                                                <th scope="col">ID</th>
+                                                <th scope="col">Imagem</th>
+                                                <th scope="col">Descricao</th>
+                                                <th scope="col">Categoria</th>
+                                                <th scope="col">Tamanho</th>
+                                                <th scope="col">Valor Compra</th>
+                                                <th scope="col">Valor Venda</th>
+                                                <th scope="col">Estoque</th>
+                                                <th scope="col">Estoque minimo</th>
+                                                <th scope="col">Update</th>
+                                                <th scope="col">Delete</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <th scope="row">1</th>
-                                                <td>Mark</td>
-                                                <td>Otto</td>
-                                                <td>@mdo</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">2</th>
-                                                <td>Jacob</td>
-                                                <td>Thornton</td>
-                                                <td>@fat</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">3</th>
-                                                <td colspan="2">Larry the Bird</td>
-                                                <td>@twitter</td>
-                                            </tr>
+                                        <tr class="text-center align-items-center">
+                                            <th scope="row" class="align-middle">1</th>
+                                            <td class="align-middle"><img src="./img/Feminino/Blusa/blusa1f.png" style="height: 150px; width: 100px;" alt="a"></td>
+                                            <td class="align-middle">Blusa branca</td>
+                                            <td class="align-middle">Blusa</td>
+                                            <td class="align-middle">M</td>
+                                            <td class="align-middle">R$50,00</td>
+                                            <td class="align-middle">R$65,00</td>
+                                            <td class="align-middle">60</td>
+                                            <td class="align-middle">10</td>
+                                            <td class="align-middle"><a href="."><i class="bi bi-cloud-upload-fill" style="font-size: 40px;"></i></a></td>
+                                            <td class="align-middle"><a href="."><i class="bi bi-trash3-fill" style="font-size: 40px;"></a></i></td>
+                                        </tr>
+
                                         </tbody>
                                     </table>
+
+
+
+
                                 </div>
                                 <div class="tab-pane fade" id="list-profile" role="tabpanel"
-                                    aria-labelledby="list-profile-list">...</div>
+                                    aria-labelledby="list-profile-list">
+                                
+                                
+
+                                    <table class="table table-hover text-center">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">ID</th>
+                                                <th scope="col">Nome</th>
+                                                <th scope="col">CPF</th>
+                                                <th scope="col">Email</th>
+                                                <th scope="col">Senha</th>
+                                                <th scope="col">Prefixo</th>
+                                                <th scope="col">Contato</th>
+                                                <th scope="col">Data Nascimento</th>
+                                                <th scope="col">Cidade</th>
+                                                <th scope="col">Update</th>
+                                                <th scope="col">Delete</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr class="text-center align-items-center">
+                                            <th scope="row" class="align-middle">3</th>
+                                            <td class="align-middle">Cleiton</td>
+                                            <td class="align-middle">666.666.666-66</td>
+                                            <td class="align-middle">abcd@gmail.com</td>
+                                            <td class="align-middle"></td>
+                                            <td class="align-middle">55</td>
+                                            <td class="align-middle">1899999-9999</td>
+                                            <td class="align-middle">2004-11-26</td>
+                                            <td class="align-middle">3</td>
+                                            <td class="align-middle"><a href="."><i class="bi bi-cloud-upload-fill" style="font-size: 40px;"></i></a></td>
+                                            <td class="align-middle"><a href="."><i class="bi bi-trash3-fill" style="font-size: 40px;"></a></i></td>
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+                                
+                                
+                                </div>
                                 <div class="tab-pane fade" id="list-messages" role="tabpanel"
-                                    aria-labelledby="list-messages-list">...</div>
+                                    aria-labelledby="list-messages-list">
+                                
+                                    <table class="table table-hover text-center">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">ID</th>
+                                                <th scope="col">Descricao</th>
+                                                <th>  </th>
+                                                <th>  </th>
+                                                <th>  </th>
+                                                <th>  </th>
+                                                <th>  </th>
+                                                <th>  </th>
+                                                <th>  </th>
+                                                <th>  </th>
+                                                <th scope="col">Update</th>
+                                                <th scope="col">Delete</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr class="text-center align-items-center">
+                                            <th scope="row" class="align-middle">3</th>
+                                            <td class="align-middle">Blusinha</td>
+                                            <td>  </td>
+                                            <td>  </td>
+                                            <td>  </td>
+                                            <td>  </td>
+                                            <td>  </td>
+                                            <td>  </td>
+                                            <td>  </td>
+                                            <td>  </td>
+                                            <td class="align-middle"><a href="."><i class="bi bi-cloud-upload-fill" style="font-size: 40px;"></i></a></td>
+                                            <td class="align-middle"><a href="."><i class="bi bi-trash3-fill" style="font-size: 40px;"></a></i></td>
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+                                
+                                
+                                </div>
                                 <div class="tab-pane fade" id="list-settings" role="tabpanel"
-                                    aria-labelledby="list-settings-list">...</div>
+                                    aria-labelledby="list-settings-list">
+                                
+                                    <table class="table table-hover text-center">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">ID</th>
+                                                <th scope="col">Descricao</th>
+                                                <th>  </th>
+                                                <th>  </th>
+                                                <th>  </th>
+                                                <th>  </th>
+                                                <th>  </th>
+                                                <th>  </th>
+                                                <th>  </th>
+                                                <th>  </th>
+                                                <th scope="col">Update</th>
+                                                <th scope="col">Delete</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr class="text-center align-items-center">
+                                            <th scope="row" class="align-middle">6</th>
+                                            <td class="align-middle">PP</td>
+                                            <td>  </td>
+                                            <td>  </td>
+                                            <td>  </td>
+                                            <td>  </td>
+                                            <td>  </td>
+                                            <td>  </td>
+                                            <td>  </td>
+                                            <td>  </td>
+                                            <td class="align-middle"><a href="."><i class="bi bi-cloud-upload-fill" style="font-size: 40px;"></i></a></td>
+                                            <td class="align-middle"><a href="."><i class="bi bi-trash3-fill" style="font-size: 40px;"></a></i></td>
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+                                
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -128,6 +264,8 @@ $lstUf = $bllUf->Select();
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>

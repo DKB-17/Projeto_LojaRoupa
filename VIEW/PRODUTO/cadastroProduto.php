@@ -46,6 +46,7 @@ $listaCategoria = $categorias->Select();
 </head>
 
 <body class="bg-body-tertiary">
+
     <div class="container">
         <main>
             <div class="py-5 text-center">

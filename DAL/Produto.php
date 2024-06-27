@@ -44,4 +44,29 @@ class Produto
 
         return $result;
     }
+
+    public function Delete(int $idProduto){
+        $sql = 'delete from produto where id = ?;';
+
+        $con = Conexao::conectar();
+        $query = $con->prepare($sql);
+        $result = $query->execute([$idProduto]);
+        $con = Conexao::desconectar();
+
+        return $result;
+    }
+
+    public function Update(\MODEL\Produto $produto){
+        $sql = 'UPDATE produto SET idCategoria = ?, idTamanho = ?, descricao = ?, caminho_imagem = ?, data_criacao = ?, valor_compra = ?, valor_venda = ?, estoque = ?, estoque_minimo = ? WHERE id = ?;';
+
+        $con = Conexao::conectar();
+        $query = $con->prepare($sql);
+        $result = $query->execute([$produto->getIdCategoria(), $produto->getIdTamanho(), $produto->getDescricao(), $produto->getCaminhoImagem(), $produto->getDataCriacao(), $produto->getValorCompra(), $produto->getValorVenda(), $produto->getEstoque(), $produto->getEstoqueMinimo(), $produto->getIdProduto()]);
+        $con = Conexao::desconectar();
+
+
+        return $result;
+    }
 }
+
+?>

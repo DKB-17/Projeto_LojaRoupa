@@ -71,13 +71,21 @@ $lstUf = $bllUf->Select();
                             <div class="tab-content" id="nav-tabContent">
                                 <div class="tab-pane fade show active" id="list-home" role="tabpanel"
                                     aria-labelledby="list-home-list">
+
+
+
                                     <table class="table table-hover">
                                         <thead>
                                             <tr>
-                                                <th scope="col">#</th>
-                                                <th scope="col">First</th>
-                                                <th scope="col">Last</th>
-                                                <th scope="col">Handle</th>
+                                                <th scope="col">idProduto</th>
+                                                <th scope="col">Imagem</th>
+                                                <th scope="col">Descricao</th>
+                                                <th scope="col">IdCategoria</th>
+                                                <th scope="col">Idtamanho</th>
+                                                <th scope="col">Valor Compra</th>
+                                                <th scope="col">Valor Venda</th>
+                                                <th scope="col">Estoque</th>
+                                                <th scope="col">Estoque minimo</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -100,6 +108,10 @@ $lstUf = $bllUf->Select();
                                             </tr>
                                         </tbody>
                                     </table>
+
+
+
+
                                 </div>
                                 <div class="tab-pane fade" id="list-profile" role="tabpanel"
                                     aria-labelledby="list-profile-list">...</div>

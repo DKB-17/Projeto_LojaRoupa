@@ -130,14 +130,14 @@ $lstUf = $bllUf->Select();
                                         <thead>
                                             <tr>
                                                 <th scope="col">ID</th>
-                                                <th scope="col">Imagem</th>
-                                                <th scope="col">Descricao</th>
-                                                <th scope="col">Categoria</th>
-                                                <th scope="col">Tamanho</th>
-                                                <th scope="col">Valor Compra</th>
-                                                <th scope="col">Valor Venda</th>
-                                                <th scope="col">Estoque</th>
-                                                <th scope="col">Estoque minimo</th>
+                                                <th scope="col">Nome</th>
+                                                <th scope="col">CPF</th>
+                                                <th scope="col">Email</th>
+                                                <th scope="col">Senha</th>
+                                                <th scope="col">Prefixo</th>
+                                                <th scope="col">Contato</th>
+                                                <th scope="col">Data Nascimento</th>
+                                                <th scope="col">Cidade</th>
                                                 <th scope="col">Update</th>
                                                 <th scope="col">Delete</th>
                                             </tr>
@@ -146,12 +146,12 @@ $lstUf = $bllUf->Select();
                                         <tr class="text-center align-items-center">
                                             <th scope="row" class="align-middle">1</th>
                                             <td class="align-middle"><img src="./img/Feminino/Blusa/blusa1f.png" style="height: 150px; width: 100px;" alt="a"></td>
-                                            <td class="align-middle">Blusa branca</td>
-                                            <td class="align-middle">Blusa</td>
-                                            <td class="align-middle">M</td>
-                                            <td class="align-middle">R$50,00</td>
-                                            <td class="align-middle">R$65,00</td>
-                                            <td class="align-middle">60</td>
+                                            <td class="align-middle">3</td>
+                                            <td class="align-middle">Cleiton</td>
+                                            <td class="align-middle">666.666.666-66</td>
+                                            <td class="align-middle">18</td>
+                                            <td class="align-middle">1899999-9999</td>
+                                            <td class="align-middle"></td>
                                             <td class="align-middle">10</td>
                                             <td class="align-middle"><a href="."><i class="bi bi-cloud-upload-fill" style="font-size: 40px;"></i></a></td>
                                             <td class="align-middle"><a href="."><i class="bi bi-trash3-fill" style="font-size: 40px;"></a></i></td>

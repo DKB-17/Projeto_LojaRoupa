@@ -9,6 +9,13 @@ use DAL;
 
 class Cliente
 {
+
+    public function Select(){
+        $dalCliente = new \DAL\Cliente();
+        return $dalCliente->Select();
+    }
+
+
     public function SelectByCpf(string $cpf){
         $dalCliente = new \DAL\Cliente();
         return $dalCliente->SelectByCpf($cpf);

@@ -39,8 +39,8 @@
         public function getDataNascimento(){return $this->data_nascimento;}
         public function setDataNascimento(string $data_nascimento){$this->data_nascimento=$data_nascimento;}
 
-        public function getIdcidade(){return $this->idCidade;}
-        public function setIdcidade(int $idCidade){$this->idCidade=$idCidade;}
+        public function getIdCidade(){return $this->idCidade;}
+        public function setIdCidade(int $idCidade){$this->idCidade=$idCidade;}
 
     }
 

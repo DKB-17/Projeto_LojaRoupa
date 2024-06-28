@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 27/06/2024 às 12:11
+-- Tempo de geração: 28/06/2024 às 01:48
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -37,9 +37,11 @@ CREATE TABLE `categoria` (
 --
 
 INSERT INTO `categoria` (`id`, `descricao`) VALUES
-(1, 'camiseta'),
-(2, 'camisa'),
-(3, 'blusa');
+(1, 'Camiseta'),
+(2, 'Casaco'),
+(3, 'Saia'),
+(4, 'Bermuda'),
+(5, 'Calça');
 
 -- --------------------------------------------------------
 
@@ -177,8 +179,30 @@ CREATE TABLE `produto` (
 --
 
 INSERT INTO `produto` (`idProduto`, `idCategoria`, `idTamanho`, `descricao`, `caminho_imagem`, `data_criacao`, `valor_compra`, `valor_venda`, `estoque`, `estoque_minimo`) VALUES
-(1, 1, 1, 'Camisa gucci', './img/imgProdutos/667cfef470ec4.png', '2024-06-27 02:56:04', 12.22, 12.22, 2, 3),
-(2, 1, 3, 'Camisinha de morango', './img/imgProdutos/667d02eef2557.png', '2024-06-27 03:13:02', 4.50, 6.00, 12, 4);
+(3, 2, 3, 'Moletom roxo claro', './img/imgProdutos/667df2c9dffc8.png', '2024-06-27 20:16:25', 70.00, 90.00, 10, 5),
+(4, 2, 3, 'Moletom branco com detalhes rosa', './img/imgProdutos/667df314a5c80.png', '2024-06-27 20:17:40', 70.00, 90.00, 10, 5),
+(5, 2, 1, 'Corta vento branco', './img/imgProdutos/667df34f3a091.png', '2024-06-27 20:18:39', 80.00, 100.00, 10, 5),
+(6, 2, 1, 'Calça jeans desenhada', './img/imgProdutos/667df39943f15.png', '2024-06-27 20:19:53', 80.00, 100.00, 10, 5),
+(7, 2, 1, 'Calça preta com desenhos coloridos', './img/imgProdutos/667df3c7e5c93.png', '2024-06-27 20:20:39', 80.00, 100.00, 10, 5),
+(8, 5, 1, 'Calça cargo marrom', './img/imgProdutos/667df4972d720.png', '2024-06-27 20:24:07', 60.00, 80.00, 10, 5),
+(9, 1, 1, 'Camiseta roxo escuro', './img/imgProdutos/667df4d4baff8.png', '2024-06-27 20:25:08', 30.00, 50.00, 10, 5),
+(10, 1, 3, 'Camiseta verde limão', './img/imgProdutos/667df4fe187bd.png', '2024-06-27 20:25:50', 30.00, 50.00, 10, 5),
+(11, 1, 1, 'Camiseta preta com detalhe vermelho', './img/imgProdutos/667df52aa3bae.png', '2024-06-27 20:26:34', 30.00, 50.00, 10, 5),
+(12, 3, 1, 'Saia cargo marrom', './img/imgProdutos/667df551975b6.png', '2024-06-27 20:27:13', 60.00, 80.00, 10, 5),
+(13, 3, 1, 'Saia jeans cinza', './img/imgProdutos/667df57d44a97.png', '2024-06-27 20:27:57', 60.00, 80.00, 10, 5),
+(14, 3, 1, 'Saia marrom ', './img/imgProdutos/667df5a4bf955.png', '2024-06-27 20:28:36', 60.00, 80.00, 10, 5),
+(15, 2, 3, 'Corta vento azul marinho', './img/imgProdutos/667df5f6546cc.png', '2024-06-27 20:29:58', 70.00, 90.00, 10, 5),
+(16, 2, 3, 'Corta vento marrom claro', './img/imgProdutos/667df6166b9ff.png', '2024-06-27 20:30:30', 70.00, 90.00, 10, 5),
+(17, 2, 3, 'Corta vento verde escuro', './img/imgProdutos/667df6415761d.png', '2024-06-27 20:31:13', 80.00, 100.00, 10, 5),
+(18, 5, 1, 'Calça bege', './img/imgProdutos/667df69a254fd.png', '2024-06-27 20:32:42', 60.00, 80.00, 10, 5),
+(19, 5, 1, 'Calça preta', './img/imgProdutos/667df6c961a3f.png', '2024-06-27 20:33:29', 60.00, 80.00, 10, 5),
+(20, 5, 3, 'Calça cargo preta', './img/imgProdutos/667df7429acac.png', '2024-06-27 20:35:30', 60.00, 80.00, 10, 5),
+(21, 1, 1, 'Camiseta verde escuro', './img/imgProdutos/667df92d5a74a.png', '2024-06-27 20:43:41', 30.00, 50.00, 10, 5),
+(22, 1, 1, 'Camiseta preta com detalhe azul', './img/imgProdutos/667df955557c2.png', '2024-06-27 20:44:21', 30.00, 50.00, 10, 5),
+(23, 1, 1, 'Camiseta roxa', './img/imgProdutos/667df971ac364.png', '2024-06-27 20:44:49', 30.00, 50.00, 10, 5),
+(24, 4, 3, 'Shorts azul marinho', './img/imgProdutos/667df9a50e724.png', '2024-06-27 20:45:41', 15.00, 30.00, 10, 5),
+(25, 4, 3, 'Shorts cargo marrom ', './img/imgProdutos/667df9ccc77c5.png', '2024-06-27 20:46:20', 15.00, 30.00, 10, 5),
+(26, 4, 3, 'Shorts cargo bege', './img/imgProdutos/667df9e92b107.png', '2024-06-27 20:46:49', 20.00, 40.00, 10, 5);
 
 -- --------------------------------------------------------
 
@@ -345,7 +369,7 @@ ALTER TABLE `venda`
 -- AUTO_INCREMENT de tabela `categoria`
 --
 ALTER TABLE `categoria`
-  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de tabela `cidade`
@@ -381,7 +405,7 @@ ALTER TABLE `genero`
 -- AUTO_INCREMENT de tabela `produto`
 --
 ALTER TABLE `produto`
-  MODIFY `idProduto` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `idProduto` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT de tabela `tamanho`

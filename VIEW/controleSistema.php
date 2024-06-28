@@ -188,10 +188,46 @@ $lstUf = $bllUf->Select();
 
 
                                 </div>
-                                <div class="tab-pane fade" id="list-messages" role="tabpanel"
-                                    aria-labelledby="list-messages-list">...</div>
                                 <div class="tab-pane fade" id="list-settings" role="tabpanel"
-                                    aria-labelledby="list-settings-list">...</div>
+                                    aria-labelledby="list-settings-list">
+                                
+                                    <table class="table table-hover text-center">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">ID</th>
+                                                <th scope="col">Descricao</th>
+                                                <th>  </th>
+                                                <th>  </th>
+                                                <th>  </th>
+                                                <th>  </th>
+                                                <th>  </th>
+                                                <th>  </th>
+                                                <th>  </th>
+                                                <th>  </th>
+                                                <th scope="col">Update</th>
+                                                <th scope="col">Delete</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr class="text-center align-items-center">
+                                            <th scope="row" class="align-middle">6</th>
+                                            <td class="align-middle">PP</td>
+                                            <td>  </td>
+                                            <td>  </td>
+                                            <td>  </td>
+                                            <td>  </td>
+                                            <td>  </td>
+                                            <td>  </td>
+                                            <td>  </td>
+                                            <td>  </td>
+                                            <td class="align-middle"><a href="."><i class="bi bi-cloud-upload-fill" style="font-size: 40px;"></i></a></td>
+                                            <td class="align-middle"><a href="."><i class="bi bi-trash3-fill" style="font-size: 40px;"></a></i></td>
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+                                
+                                </div>
                             </div>
                         </div>
                     </div>

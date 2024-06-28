@@ -13,6 +13,13 @@ class Produto{
         return $dalProduto->Select();
     }
 
+    public function SelectById(int $id){
+        $dalProduto = new \DAL\Produto();
+        return $dalProduto->SelectById($id);
+    }
+
+
+
     public function Insert(\MODEL\Produto $produto){
         $dalProduto = new \DAL\Produto();
         return $dalProduto->Insert($produto);

@@ -34,6 +34,36 @@ class Produto
         return $listaProduto;
     }
 
+    public function SelectById(int $id){
+        $sql = 'select * from produto where idProduto like ?;';
+        $con = Conexao::conectar();
+        $query = $con->prepare($sql);
+        $query->execute([$id]);
+        $linha = $query->fetch(\PDO::FETCH_ASSOC);
+        $con = Conexao::desconectar();
+
+        if($linha != 0){
+
+            $produto = new \MODEL\Produto();
+            $produto->setIdProduto($linha['idProduto']);
+            $produto->setIdCategoria($linha['idCategoria']);
+            $produto->setIdTamanho($linha['idTamanho']);
+            $produto->setDescricao($linha['descricao']);
+            $produto->setCaminhoImagem($linha['caminho_imagem']);
+            $produto->setDataCriacao($linha['data_criacao']);
+            $produto->setValorCompra($linha['valor_compra']);
+            $produto->setValorVenda($linha['valor_venda']);
+            $produto->setEstoque($linha['estoque']);
+            $produto->setEstoqueMinimo($linha['estoque_minimo']);
+        
+            return $produto;
+        }
+        return null;
+
+
+
+    }
+
     public function Insert(\MODEL\Produto $produto)
     {
         $sql = 'INSERT INTO produto (idCategoria, idTamanho, descricao, caminho_imagem, valor_compra, valor_venda, estoque, estoque_minimo) VALUE (?, ?, ?, ?, ?, ?, ?, ?);';
@@ -46,7 +76,7 @@ class Produto
     }
 
     public function Delete(int $idProduto){
-        $sql = 'delete from produto where id = ?;';
+        $sql = 'DELETE FROM produto WHERE produto . idProduto = ?;';
 
         $con = Conexao::conectar();
         $query = $con->prepare($sql);
